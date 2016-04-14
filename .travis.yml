@@ -8,10 +8,6 @@ before_install:
   - gem install bundler -v $(grep bundler omnibus_overrides.rb | cut -d'"' -f2)
   - rm -f .bundle/config
 
-  - script: echo true
-    #script: tasks/bin/run_external_test $TEST_GEM "rake spec"
-    rvm: 2.2
-
 # bundler_args: --jobs=3 --retry=3 --deployment --path vendor/bundle
 
 # do not run expensive spec tests on PRs, only on branches
