@@ -1,0 +1,19 @@
+PATH
+  remote: .
+  specs:
+    bundle-test-foo (1.0.1)
+      bundle-test-bar (~> 2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    bundle-test-bar (2.0.1)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundle-test-foo!
+
+BUNDLED WITH
+   1.12.5
